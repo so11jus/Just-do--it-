@@ -1,0 +1,374 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #F9F9FB;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .block {
+  width: 270px;
+}
+
+.main .signIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 160px;
+  width: 470px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 470px;
+}
+
+.main .signIn .signInTitle {
+  font-weight: 700;
+  font-size: 24px;
+  color: #373F41;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.main .signIn .signInInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .signIn .signInInput .signInInput {
+  width: 374px;
+  height: 49px;
+  padding-left: 16px;
+  border: 1px solid #EAEAEC;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+
+.main .signIn .signInInput .signInInput::-webkit-input-placeholder {
+  color: #373F41;
+  opacity: 0.5;
+}
+
+.main .signIn .signInInput .signInInput:-ms-input-placeholder {
+  color: #373F41;
+  opacity: 0.5;
+}
+
+.main .signIn .signInInput .signInInput::-ms-input-placeholder {
+  color: #373F41;
+  opacity: 0.5;
+}
+
+.main .signIn .signInInput .signInInput::placeholder {
+  color: #373F41;
+  opacity: 0.5;
+}
+
+.main .signIn .signInInput .signInInput:hover {
+  border: 1px solid #CFCFCF;
+}
+
+.main .signIn .signInInput .signInInput:focus {
+  border: 1px solid #277FFE;
+}
+
+.main .signIn .signInInput .password {
+  position: relative;
+}
+
+.main .signIn .signInInput .password .signInInputPassword {
+  width: 374px;
+  height: 49px;
+  padding-left: 16px;
+  border: 1px solid #EAEAEC;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+
+.main .signIn .signInInput .password .signInInputPassword::-webkit-input-placeholder {
+  color: #373F41;
+  opacity: 0.5;
+}
+
+.main .signIn .signInInput .password .signInInputPassword:-ms-input-placeholder {
+  color: #373F41;
+  opacity: 0.5;
+}
+
+.main .signIn .signInInput .password .signInInputPassword::-ms-input-placeholder {
+  color: #373F41;
+  opacity: 0.5;
+}
+
+.main .signIn .signInInput .password .signInInputPassword::placeholder {
+  color: #373F41;
+  opacity: 0.5;
+}
+
+.main .signIn .signInInput .password .signInInputPassword:hover {
+  border: 1px solid #CFCFCF;
+}
+
+.main .signIn .signInInput .password .signInInputPassword:focus {
+  border: 1px solid #277FFE;
+}
+
+.main .signIn .signInInput .password label {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+}
+
+.main .signIn .signInInput .password label:hover {
+  cursor: pointer;
+}
+
+.main .signIn .formButtons {
+  width: 395px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .signIn .formButtons .signInSubmit {
+  padding: 16px 32px;
+  gap: 10px;
+  background: #277FFE;
+  border-radius: 8px;
+  border: 1px solid #277FFE;
+  font-size: 14px;
+  color: white;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.main .signIn .formButtons .signInSubmit:hover {
+  background: #005FE8;
+  border: 1px solid #005FE8;
+}
+
+.main .signIn .formButtons .signInSubmit:active {
+  opacity: 0.7;
+}
+
+.main .signIn .formButtons .forgotPassword {
+  text-decoration: none;
+  color: #277FFE;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.main .signIn .formButtons .forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.main .signIn .formButtons .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  padding: 4px;
+  margin-right: 15px;
+  border: 1px solid white;
+}
+
+.main .signIn .formButtons .label .checkbox {
+  display: none;
+}
+
+.main .signIn .formButtons .label .checkbox:checked + .fake::before {
+  opacity: 1;
+}
+
+.main .signIn .formButtons .label .fake {
+  display: inline-block;
+  margin-right: 8px;
+  width: 33px;
+  height: 19px;
+  background-image: url(../img/checkbock_before.png);
+  position: relative;
+}
+
+.main .signIn .formButtons .label .fake::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  background-image: url(../img/checkbox_after.png);
+  opacity: 0;
+}
+
+.main .signIn .formButtons .label .checkTitle {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #373F41;
+}
+
+.main .signIn .formButtons .label .forgotPassword {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #277FFE;
+}
+
+.main .signIn .line {
+  width: 390px;
+  height: 1px;
+  border: none;
+  background-color: #EAEAEC;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.main .signIn .signUp {
+  padding: 16px 32px;
+  border: 1px solid #277FFE;
+  border-radius: 8px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #277FFE;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 40px;
+}
+
+.main .signIn .signUp:hover {
+  border: 2px solid #277FFE;
+  padding-top: 15px;
+}
+
+.main .signIn .signUp:focus {
+  border: 2px solid #277FFE;
+  opacity: 0.7;
+  padding-top: 15px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.main .rules {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .rules .blockRules {
+  margin-left: 20px;
+  margin-top: 190px;
+  width: 270px;
+  height: 176px;
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+
+.main .rules .blockRules .rulesList {
+  margin-left: 44px;
+  margin-top: 20px;
+  margin-right: 17px;
+  margin-bottom: 20px;
+}
+
+.main .rules .blockRules .rulesList .listItemError {
+  margin-bottom: 10px;
+}
+
+.main .rules .blockRules .rulesList .listItemError::marker {
+  color: #FF5555;
+}
+
+.main .rules .blockRules .rulesList .listItemError .rulesTextError {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FF5555;
+}
+
+.main .rules .blockRules .rulesList .listItemRight {
+  margin-bottom: 10px;
+}
+
+.main .rules .blockRules .rulesList .listItemRight::marker {
+  color: #00B074;
+}
+
+.main .rules .blockRules .rulesList .listItemRight .rulesTextRight {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #00B074;
+}

@@ -1,0 +1,171 @@
+$blue: #277FFE;
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: #F9F9FB;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.signIn{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 160px;
+    width: 470px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    align-items: center;
+    .signInTitle{
+        font-weight: 700;
+        font-size: 24px;
+        color: #373F41;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .signInInputs{
+        display: flex;
+        flex-direction: column;
+        .signInInput{
+            width: 374px;
+            height: 49px;
+            padding-left: 16px;
+            border: 1px solid #EAEAEC;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 20px;
+            &::placeholder{
+                color: #373F41;
+                opacity: 0.5;
+            }
+            &:hover{
+                border: 1px solid #CFCFCF;
+            }
+            &:focus{
+                border: 1px solid $blue;
+            }
+        }
+        div{
+            position: relative;
+            .signInInputPassword{
+                width: 374px;
+                height: 49px;
+                padding-left: 16px;
+                border: 1px solid #EAEAEC;
+                border-radius: 8px;
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 20px;
+                &::placeholder{
+                    color: #373F41;
+                    opacity: 0.5;
+                }
+                &:hover{
+                    border: 1px solid #CFCFCF;
+                }
+                &:focus{
+                    border: 1px solid $blue;
+                }
+            }
+            label{
+                position: absolute;
+                right: 20px;
+                top: 17px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .formButtons{
+        width: 395px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .signInSubmit{
+            padding: 16px 32px;
+            gap: 10px;
+            background: $blue;
+            border-radius: 8px;
+            border: 1px solid $blue;
+            font-size: 14px;
+            color:white;
+            transition: 200ms;
+            &:hover{
+                background: #005FE8;
+                border: 1px solid #005FE8;
+            }
+            &:active{
+                opacity: 0.7;
+            }
+        }
+        .forgotPassword{
+            text-decoration: none;
+            color: $blue;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .check{
+            display: flex;
+            justify-content: space-between;
+            .checkButton{
+                margin-right: 8px;
+            }
+            .checkTitle{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #373F41;
+            }
+        }
+    }
+    .line{
+        width: 390px;
+        height: 1px;
+        border: none;
+        background-color: #EAEAEC;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .signUp{
+        padding: 16px 32px;
+        border: 1px solid $blue;
+        border-radius: 8px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        color: $blue;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 40px;
+        &:hover{
+            border: 2px solid $blue;
+            padding-top: 15px;
+        }
+        &:focus{
+            border: 2px solid $blue;
+            opacity: 0.7;
+            padding-top: 15px;
+            transition: 200ms;
+        }
+    }
+}

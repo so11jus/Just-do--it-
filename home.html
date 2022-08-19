@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/lato.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style_home.css">
+    <title>Главный экран</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="menuUp">
+            <div class="header">
+                <img src="img/logo.png" alt="logo" class="logo">
+                <button class="exitButton"><img src="img/menu_exit.png" alt="exit" class="menuImg"></button>
+            </div>
+            <div class="menuList">
+                <div class="listItem listItemFocus" id="menu_inbox"> 
+                    <div for="inbox" class="listItemContainer">
+                        <img src="img/menu_inbox.png" alt="list" class="listIcon">
+                        <div class="listTitle">Входящие</div>
+                    </div>
+                    <div class="notificationNumber">4</div>
+                </div>
+                <div class="listItem" id="menu_today">
+                    <div for="today" class="listItemContainer">
+                        <img src="img/menu_today.png" alt="list" class="listIcon">
+                        <div class="listTitle">Сегодня</div>
+                    </div>
+                    <div class="notificationNumber">21</div>
+                </div>
+                <div class="listItem" id="menu_plans">
+                    <div for="plans" class="listItemContainer">
+                        <img src="img/menu_plans.png" alt="list" class="listIcon">
+                        <div class="listTitle">Планы</div>
+                    </div>
+                    <div class="notificationNumber"></div>
+                </div>
+                <div class="listItem" id="menu_ever">
+                    <div for="book" class="listItemContainer">
+                        <img src="img/menu_book.png" alt="list" class="listIcon">
+                        <div class="listTitle">Когда-нибудь</div>
+                    </div>
+                    <div class="notificationNumber"></div>
+                </div>
+            </div>
+        </div>
+        <div class="menuDown">
+            <div class="QA">
+                <img src="img/menu_help.png" alt="help" class="QAImg">
+                <div class="QATitle">Вопросы и ответы</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="header">
+            <div class="search">
+                <img src="img/header_search.png" alt="lupa" class="searchImg">
+                <input type="text" placeholder="Найти задачу..." class="searchInput">
+            </div>
+            <div class="headerMenu">
+                <button id="reminder">
+                    <img src="img/header_notifications.png" alt="notification" class="notificationImg">
+                </button>
+                <div class="reminder">
+                    <div class="reminderTitle">У вас есть невыполненная задача</div>
+                    <div class="reminderTask">
+                        <div class="reminderTaskTitle">Купить еды домой</div>
+                        <div class="reminderTaskDescription">Сахар <br> Курица <br> Перец</div>
+                        <buttom class="reminderTaskDate">
+                            <img src="img/reminder_end_date.svg" alt="date">
+                            <div class="reminderTaskDateTitle">
+                                До 27 августа
+                            </div>
+                        </buttom>
+                    </div>
+                    <button class="reminderPlus">
+                        <img src="img/notifications_plus.svg" alt="plus">
+                        <div class="reminderPlusTitle">Уведомить еще</div>
+                    </button>
+                    <button class="thanks">Спасибо!</button>
+                </div>
+                <div class="profile" id="profile">
+                    <div class="profileLinks">
+                        <a href="#" class = "profileData">
+                            <div class="profileDataImg"><img src="img/profile_data.svg" alt="profile"></div>
+                            <div class="profileDataTitle">Личные Данные</div>
+                        </a>
+                        <a href="#" class = "profileOptions">
+                            <div class="profileOptionsImg"><img src="img/profile_options.svg" alt="options"></div>
+                            <div class="profileOptionsTitle">Настройки</div>
+                        </a>
+                    </div>
+                    <hr class="profileHr">
+                    <div class="profileExit">
+                        <div class="profileExitImg"><img src="img/profile_exit.svg" alt="exit"></div>
+                        <a href="signin.html" class="profileExitTitle">Выход</a>
+                    </div>
+                </div>
+                <button class="profileOptions" id="profileOptions">
+                    <div class="avatarka"><img src="img/zilibobka.png" alt="profileImg" class="profileImg"></div>
+                    <div class="nickname">Зилибобка</div>
+                    <img src="img/header_arrow.png" alt="list" class="headerArrow">
+                </button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="main_block mainBlockInbox mainBlockActive">
+                <div class="main_block_header">
+                    <div class="header_title">
+                        <img src="img/content_inbox.png" alt="inbox">
+                        <div class="titleText">Входящие</div>
+                    </div>
+                    <div class="header_sort">
+                        <button class="sort_button">
+                            <img src="img/content_sort.png" alt="sort">
+                            <div class="sort_title">Сортировать</div>
+                        </button>
+                        <div class="sortButtonWindow">
+                            <button class="sortPriority">
+                                <div><img src="img/sort_priority.svg" alt=""></div>
+                                <div class="sortPriorityTitle">Сортировать по приоритету</div>
+                            </button>
+                            <button class="sortDate">
+                                <div><img src="img/sort_date.svg" alt=""></div>
+                                <div class="sortDateTitle">Сортировать по дате</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="taskToday">
+                    <div class="todayHeader">
+                        <div class="todayTitle">Сегодня</div>
+                        <div class="todayDate">Четверг, 24 августа 2021</div>
+                        <div class="todayArrow"><img src="img/header_arrow.png" alt="arrow"></div>
+                    </div>
+                    <div class="task1">
+                        <label class="label">
+                            <input type="checkbox" class="checkbox_red">
+                            <div class="fake"></div>
+                            <div class="taskContent">
+                                <div class="taskTitle">Задача с высоким приоритетом</div>
+                                <div class="taskDescription">Описание задачи</div>
+                                <div class="buttons_red">
+                                    <button class="dateStart_red">
+                                        <img src="img/calendar_red.svg" alt="date">
+                                        <span class="dateStartTitle">24 августа</span>
+                                    </button>
+                                    <button class="dateEnd_red">
+                                        <img src="img/calendar_date_red.svg" alt="date">
+                                        <span class="dateEndTitle">24 августа</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="newTask hidden">
+                        <form action="#">
+                            <div class="newTaskTitle"><input type="text" name="newTaskTitle" placeholder="Новая задача"></div>
+                            <div class="taskDescription">
+                                <textarea type="text" name="newTaskDescription1" placeholder="Описание"></textarea>
+                            </div>
+                            <div class="newTaskButtons">
+                                <button class="dateStartBlue">
+                                    <img src="img/calendar_date_blue.svg" alt="date">
+                                    <div class="dateStartBlueTitle">Сегодня</div>
+                                </button>
+                                <input type="date" class="hidden_date">
+                                <button class="dateEndBlue">
+                                    <img src="img/calendar_end_blue.svg" alt="end">
+                                    <div class="dateEndBlueTitle">Срок выполнения</div>
+                                </button>
+                                <input type="date" class="hidden_date">
+                                <button class="priorityBlue">
+                                    <img src="img/priority_blue.svg" alt="priority">
+                                    <div class="priorityBlueTitle">Приоритет</div>
+                                </button>
+                                <button class="notificationBlue">
+                                    <img src="img/notidication_blue.svg" alt="notification">
+                                    <div class="notificationBlueTitle">Уведомления</div>
+                                </button>
+                                <div class="notificationWindow">
+                                    <div class="notificationTitle">Уведомления</div>
+                                    <div class="notificationForm">
+                                        <label class="notificationCheckbox">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="fake"></span>
+                                            <span class="checkTitle">За 5 минут</span>
+                                        </label>
+                                        <label class="notificationCheckbox">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="fake"></span>
+                                            <span class="checkTitle">За 30 минут</span>
+                                        </label>
+                                        <label class="notificationCheckbox">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="fake"></span>
+                                            <span class="checkTitle">За 1 час</span>
+                                        </label>
+                                        <label class="notificationCheckbox">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="fake"></span>
+                                            <span class="checkTitle">За 1 день</span>
+                                        </label>
+                                        <button class="notificationPlus">
+                                            <div class="notificationsPlusImg">
+                                                <img src="img/notifications_plus.svg" alt="">
+                                            </div>
+                                            <div class="notificationPlusTitle">
+                                                Задать самому
+                                            </div>
+                                        </button>
+                                        <div class="notificationsButtons">
+                                            <button class="buttonAdd" id="buttonAdd">Добавить</button>
+                                            <button class="buttonDelete" id="buttonDelete">Отменить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="submitButtons">
+                                <input type="submit" value="Добавить" id="submit" class="buttonAdd">
+                                <button class="buttonDelete" id="reseteButton">Отменить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="taskTomorrow">
+                    <div class="tomorrowHeader">
+                        <div class="tomorrowTitle">Завтра</div>
+                        <div class="tomorrowDate">Пятница, 25 августа 2021</div>
+                        <div class="tomorrowArrow"><img src="img/header_arrow.png" alt="arrow"></div>
+                    </div>
+                    <div class="task2">
+                        <label class="label">
+                            <input type="checkbox" class="checkbox_yellow">
+                            <div class="fake"></div>
+                            <div class="taskContent">
+                                <div class="taskTitle">Задача с средним приоритетом</div>
+                                <div class="taskDescription">Описание задачи</div>
+                                <div class="buttons_yellow">
+                                    <button class="dateStart_yellow">
+                                        <img src="img/calendar_yellow.svg" alt="date">
+                                        <span class="dateStartTitle">24 августа</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <div class="taskDate">
+                    <div class="dateHeader">
+                        <div class="dateTitle">2 сентября</div>
+                        <div class="dateArrow"><img src="img/header_arrow.png" alt="arrow"></div>
+                    </div>
+                    <div class="task3">
+                        <label class="label">
+                            <input type="checkbox" class="checkbox_blue">
+                            <div class="fake"></div>
+                            <div class="taskContent">
+                                <div class="taskTitle">Задача с низким приоритетом</div>
+                                <div class="taskDescription">Описание задачи</div>
+                                <div class="buttons_blue">
+                                    <button class="dateStart_blue">
+                                        <img src="img/calendar_blue.svg" alt="date">
+                                        <span class="dateStartTitle">2 сентября</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="task4">
+                        <label class="label">
+                            <input type="checkbox" class="checkbox_grey">
+                            <div class="fake"></div>
+                            <div class="taskContent">
+                                <div class="taskTitle">Обычная задача</div>
+                                <div class="buttons_grey">
+                                    <button class="dateStart_grey">
+                                        <img src="img/calendar_grey.svg" alt="date">
+                                        <span class="dateStartTitle">2 сентября</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <button class="addTaskButton">
+                    <div class="addTaskEllipse">
+                        <img src="img/add_task_plus.svg" alt="plus" class="plus">
+                    </div>
+                </button>
+            </div>
+            <div class="main_block mainBlockToday">
+                <div class="main_block_header">
+                    <div class="header_title">
+                        <img src="img/icon_today.svg" alt="inbox">
+                        <div class="titleText">Сегодня</div>
+                    </div>
+                    <div class="header_sort">
+                        <button class="sort_button">
+                            <img src="img/content_sort.png" alt="sort">
+                            <div class="sort_title">Сортировать</div>
+                        </button>
+                        <div class="sortButtonWindow">
+                            <button class="sortPriority">
+                                <div><img src="img/sort_priority.svg" alt=""></div>
+                                <div class="sortPriorityTitle">Сортировать по приоритету</div>
+                            </button>
+                            <button class="sortDate">
+                                <div><img src="img/sort_date.svg" alt=""></div>
+                                <div class="sortDateTitle">Сортировать по дате</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="taskToday">
+                    <div class="task1">
+                        <label class="label">
+                            <input type="checkbox" class="checkbox_red">
+                            <div class="fake"></div>
+                            <div class="taskContent">
+                                <div class="taskTitle">Задача с высоким приоритетом</div>
+                                <div class="taskDescription">Описание задачи</div>
+                                <div class="buttons_red">
+                                    <button class="dateStart_red">
+                                        <img src="img/calendar_red.svg" alt="date">
+                                        <span class="dateStartTitle">24 августа</span>
+                                    </button>
+                                    <button class="dateEnd_red">
+                                        <img src="img/calendar_date_red.svg" alt="date">
+                                        <span class="dateEndTitle">24 августа</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="newTask hidden">
+                        <form action="#">
+                            <div class="newTaskTitle"><input type="text" name="newTaskTitle" placeholder="Новая задача"></div>
+                            <div class="taskDescription">
+                                <textarea type="text" name="newTaskDescription1" placeholder="Описание"></textarea>
+                            </div>
+                            <div class="newTaskButtons">
+                                <button class="dateStartBlue">
+                                    <img src="img/calendar_date_blue.svg" alt="date">
+                                    <div class="dateStartBlueTitle">Сегодня</div>
+                                </button>
+                                <input type="date" class="hidden_date">
+                                <button class="dateEndBlue">
+                                    <img src="img/calendar_end_blue.svg" alt="end">
+                                    <div class="dateEndBlueTitle">Срок выполнения</div>
+                                </button>
+                                <input type="date" class="hidden_date">
+                                <button class="priorityBlue">
+                                    <img src="img/priority_blue.svg" alt="priority">
+                                    <div class="priorityBlueTitle">Приоритет</div>
+                                </button>
+                                <button class="notificationBlue">
+                                    <img src="img/notidication_blue.svg" alt="notification">
+                                    <div class="notificationBlueTitle">Уведомления</div>
+                                </button>
+                                <div class="notificationWindow">
+                                    <div class="notificationTitle">Уведомления</div>
+                                    <div class="notificationForm">
+                                        <label class="notificationCheckbox">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="fake"></span>
+                                            <span class="checkTitle">За 5 минут</span>
+                                        </label>
+                                        <label class="notificationCheckbox">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="fake"></span>
+                                            <span class="checkTitle">За 30 минут</span>
+                                        </label>
+                                        <label class="notificationCheckbox">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="fake"></span>
+                                            <span class="checkTitle">За 1 час</span>
+                                        </label>
+                                        <label class="notificationCheckbox">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="fake"></span>
+                                            <span class="checkTitle">За 1 день</span>
+                                        </label>
+                                        <button class="notificationPlus">
+                                            <div class="notificationsPlusImg">
+                                                <img src="img/notifications_plus.svg" alt="">
+                                            </div>
+                                            <div class="notificationPlusTitle">
+                                                Задать самому
+                                            </div>
+                                        </button>
+                                        <div class="notificationsButtons">
+                                            <button class="buttonAdd" id="buttonAdd">Добавить</button>
+                                            <button class="buttonDelete" id="buttonDelete">Отменить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="submitButtons">
+                                <input type="submit" value="Добавить" id="submit" class="buttonAdd">
+                                <button class="buttonDelete" id="reseteButton">Отменить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <button class="addTaskButton">
+                    <div class="addTaskEllipse">
+                        <img src="img/add_task_plus.svg" alt="plus" class="plus">
+                    </div>
+                </button>
+            </div>
+            <div class="main_block mainBlockPlans">
+                <div class="main_block_header">
+                    <div class="header_title">
+                        <img src="img/icon_plans.svg" alt="inbox">
+                        <div class="titleText">Планы</div>
+                    </div>
+                    <div class="header_sort">
+                        <button class="sort_button">
+                            <img src="img/content_sort.png" alt="sort">
+                            <div class="sort_title">Сортировать</div>
+                        </button>
+                        <div class="sortButtonWindow">
+                            <button class="sortPriority">
+                                <div><img src="img/sort_priority.svg" alt=""></div>
+                                <div class="sortPriorityTitle">Сортировать по приоритету</div>
+                            </button>
+                            <button class="sortDate">
+                                <div><img src="img/sort_date.svg" alt=""></div>
+                                <div class="sortDateTitle">Сортировать по дате</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="taskToday">
+                    <div class="todayHeader">
+                        <div class="todayTitle">Сегодня</div>
+                        <div class="todayDate">Четверг, 24 августа 2021</div>
+                        <div class="todayArrow"><img src="img/header_arrow.png" alt="arrow"></div>
+                    </div>
+                    <div class="task1">
+                        <label class="label">
+                            <input type="checkbox" class="checkbox_red">
+                            <div class="fake"></div>
+                            <div class="taskContent">
+                                <div class="taskTitle">Задача с высоким приоритетом</div>
+                                <div class="taskDescription">Описание задачи</div>
+                                <div class="buttons_red">
+                                    <button class="dateStart_red">
+                                        <img src="img/calendar_red.svg" alt="date">
+                                        <span class="dateStartTitle">24 августа</span>
+                                    </button>
+                                    <button class="dateEnd_red">
+                                        <img src="img/calendar_date_red.svg" alt="date">
+                                        <span class="dateEndTitle">24 августа</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="newTask hidden">
+                        <form action="#">
+                            <div class="newTaskTitle"><input type="text" name="newTaskTitle" placeholder="Новая задача"></div>
+                            <div class="taskDescription">
+                                <textarea type="text" name="newTaskDescription1" placeholder="Описание"></textarea>
+                            </div>
+                            <div class="newTaskButtons">
+                                <button class="dateStartBlue">
+                                    <img src="img/calendar_date_blue.svg" alt="date">
+                                    <div class="dateStartBlueTitle">Сегодня</div>
+                                </button>
+                                <input type="date" class="hidden_date">
+                                <button class="dateEndBlue">
+                                    <img src="img/calendar_end_blue.svg" alt="end">
+                                    <div class="dateEndBlueTitle">Срок выполнения</div>
+                                </button>
+                                <input type="date" class="hidden_date">
+                                <button class="priorityBlue">
+                                    <img src="img/priority_blue.svg" alt="priority">
+                                    <div class="priorityBlueTitle">Приоритет</div>
+                                </button>
+                                <button class="notificationBlue">
+                                    <img src="img/notidication_blue.svg" alt="notification">
+                                    <div class="notificationBlueTitle">Уведомления</div>
+                                </button>
+                                <div class="notificationWindow">
+                                    <div class="notificationTitle">Уведомления</div>
+                                    <div class="notificationForm">
+                                        <label class="notificationCheckbox">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="fake"></span>
+                                            <span class="checkTitle">За 5 минут</span>
+                                        </label>
+                                        <label class="notificationCheckbox">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="fake"></span>
+                                            <span class="checkTitle">За 30 минут</span>
+                                        </label>
+                                        <label class="notificationCheckbox">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="fake"></span>
+                                            <span class="checkTitle">За 1 час</span>
+                                        </label>
+                                        <label class="notificationCheckbox">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="fake"></span>
+                                            <span class="checkTitle">За 1 день</span>
+                                        </label>
+                                        <button class="notificationPlus">
+                                            <div class="notificationsPlusImg">
+                                                <img src="img/notifications_plus.svg" alt="">
+                                            </div>
+                                            <div class="notificationPlusTitle">
+                                                Задать самому
+                                            </div>
+                                        </button>
+                                        <div class="notificationsButtons">
+                                            <button class="buttonAdd" id="buttonAdd">Добавить</button>
+                                            <button class="buttonDelete" id="buttonDelete">Отменить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="submitButtons">
+                                <input type="submit" value="Добавить" id="submit" class="buttonAdd">
+                                <button class="buttonDelete" id="reseteButton">Отменить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="taskTomorrow">
+                    <div class="tomorrowHeader">
+                        <div class="tomorrowTitle">Завтра</div>
+                        <div class="tomorrowDate">Пятница, 25 августа 2021</div>
+                        <div class="tomorrowArrow"><img src="img/header_arrow.png" alt="arrow"></div>
+                    </div>
+                    <div class="task2">
+                        <label class="label">
+                            <input type="checkbox" class="checkbox_yellow">
+                            <div class="fake"></div>
+                            <div class="taskContent">
+                                <div class="taskTitle">Задача с средним приоритетом</div>
+                                <div class="taskDescription">Описание задачи</div>
+                                <div class="buttons_yellow">
+                                    <button class="dateStart_yellow">
+                                        <img src="img/calendar_yellow.svg" alt="date">
+                                        <span class="dateStartTitle">24 августа</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <button class="addTaskButton">
+                    <div class="addTaskEllipse">
+                        <img src="img/add_task_plus.svg" alt="plus" class="plus">
+                    </div>
+                </button>
+            </div>
+            <div class="main_block mainBlockEver">
+                <div class="main_block_header">
+                    <div class="header_title">
+                        <img src="img/icon_ever.svg" alt="inbox">
+                        <div class="titleText">Когда-нибудь</div>
+                    </div>
+                    <div class="header_sort">
+                        <button class="sort_button">
+                            <img src="img/content_sort.png" alt="sort">
+                            <div class="sort_title">Сортировать</div>
+                        </button>
+                        <div class="sortButtonWindow">
+                            <button class="sortPriority">
+                                <div><img src="img/sort_priority.svg" alt=""></div>
+                                <div class="sortPriorityTitle">Сортировать по приоритету</div>
+                            </button>
+                            <button class="sortDate">
+                                <div><img src="img/sort_date.svg" alt=""></div>
+                                <div class="sortDateTitle">Сортировать по дате</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="taskToday">
+                    <div class="todayHeader">
+                        <div class="todayTitle">Сегодня</div>
+                        <div class="todayDate">Четверг, 24 августа 2021</div>
+                        <div class="todayArrow"><img src="img/header_arrow.png" alt="arrow"></div>
+                    </div>
+                    <div class="task1">
+                        <label class="label">
+                            <input type="checkbox" class="checkbox_red">
+                            <div class="fake"></div>
+                            <div class="taskContent">
+                                <div class="taskTitle">Задача с высоким приоритетом</div>
+                                <div class="taskDescription">Описание задачи</div>
+                                <div class="buttons_red">
+                                    <button class="dateStart_red">
+                                        <img src="img/calendar_red.svg" alt="date">
+                                        <span class="dateStartTitle">24 августа</span>
+                                    </button>
+                                    <button class="dateEnd_red">
+                                        <img src="img/calendar_date_red.svg" alt="date">
+                                        <span class="dateEndTitle">24 августа</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="newTask hidden">
+                    <form action="#">
+                        <div class="newTaskTitle"><input type="text" name="newTaskTitle" placeholder="Новая задача"></div>
+                        <div class="taskDescription">
+                            <textarea type="text" name="newTaskDescription1" placeholder="Описание"></textarea>
+                        </div>
+                        <div class="newTaskButtons">
+                            <button class="dateStartBlue">
+                                <img src="img/calendar_date_blue.svg" alt="date">
+                                <div class="dateStartBlueTitle">Сегодня</div>
+                            </button>
+                            <input type="date" class="hidden_date">
+                            <button class="dateEndBlue">
+                                <img src="img/calendar_end_blue.svg" alt="end">
+                                <div class="dateEndBlueTitle">Срок выполнения</div>
+                            </button>
+                            <input type="date" class="hidden_date">
+                            <button class="priorityBlue">
+                                <img src="img/priority_blue.svg" alt="priority">
+                                <div class="priorityBlueTitle">Приоритет</div>
+                            </button>
+                            <button class="notificationBlue">
+                                <img src="img/notidication_blue.svg" alt="notification">
+                                <div class="notificationBlueTitle">Уведомления</div>
+                            </button>
+                            <div class="notificationWindow">
+                                <div class="notificationTitle">Уведомления</div>
+                                <div class="notificationForm">
+                                    <label class="notificationCheckbox">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="fake"></span>
+                                        <span class="checkTitle">За 5 минут</span>
+                                    </label>
+                                    <label class="notificationCheckbox">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="fake"></span>
+                                        <span class="checkTitle">За 30 минут</span>
+                                    </label>
+                                    <label class="notificationCheckbox">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="fake"></span>
+                                        <span class="checkTitle">За 1 час</span>
+                                    </label>
+                                    <label class="notificationCheckbox">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="fake"></span>
+                                        <span class="checkTitle">За 1 день</span>
+                                    </label>
+                                    <button class="notificationPlus">
+                                        <div class="notificationsPlusImg">
+                                            <img src="img/notifications_plus.svg" alt="">
+                                        </div>
+                                        <div class="notificationPlusTitle">
+                                            Задать самому
+                                        </div>
+                                    </button>
+                                    <div class="notificationsButtons">
+                                        <button class="buttonAdd" id="buttonAdd">Добавить</button>
+                                        <button class="buttonDelete" id="buttonDelete">Отменить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submitButtons">
+                            <input type="submit" value="Добавить" id="submit" class="buttonAdd">
+                            <button class="buttonDelete" id="reseteButton">Отменить</button>
+                        </div>
+                    </form>
+                </div>
+                <hr>
+                <div class="taskTomorrow">
+                    <div class="tomorrowHeader">
+                        <div class="tomorrowTitle">Завтра</div>
+                        <div class="tomorrowDate">Пятница, 25 августа 2021</div>
+                        <div class="tomorrowArrow"><img src="img/header_arrow.png" alt="arrow"></div>
+                    </div>
+                    <div class="task2">
+                        <label class="label">
+                            <input type="checkbox" class="checkbox_yellow">
+                            <div class="fake"></div>
+                            <div class="taskContent">
+                                <div class="taskTitle">Задача с средним приоритетом</div>
+                                <div class="taskDescription">Описание задачи</div>
+                                <div class="buttons_yellow">
+                                    <button class="dateStart_yellow">
+                                        <img src="img/calendar_yellow.svg" alt="date">
+                                        <span class="dateStartTitle">24 августа</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <button class="addTaskButton">
+                    <div class="addTaskEllipse">
+                        <img src="img/add_task_plus.svg" alt="plus" class="plus">
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="js/modal_windows.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/add_task.js"></script>
+</body>
+</html>

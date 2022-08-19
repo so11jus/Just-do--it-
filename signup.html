@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/lato.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style_signup.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="header">
+        <img src="img/logo.png" alt="logo">
+    </div>
+    <div class="main">
+        <div class="block"></div>
+        <div class="signIn">
+            <div class="signInTitle">Регистрация</div>
+            <form class="signInForm">
+                <div class="signInInput">
+                    <input type="text" name="email" class="signInInput" placeholder="Электронная почта">
+                    <div class="password">
+                        <input type="password" name="password" class="signInInputPassword" placeholder="Пароль">
+                        <label for="password" id="passwordEye"><img src="img/password_eye.svg" alt="eye"></label>
+                    </div>
+                    <div class="password">
+                        <input type="password" name="passwordAgain" class="signInInputPassword" placeholder="Пароль еще раз">
+                        <label for="passwordAgain" id="passwordAgainEye"><img src="img/password_eye.svg" alt="eye"></label>
+                    </div>
+                </div>
+                <div class="formButtons">
+                    <label class="label">
+                        <input type="checkbox" class="checkbox">
+                        <span class="fake"></span>
+                        <span class="checkTitle">Согласие на обработку <a href="#" class="forgotPassword">персональных данных</a></span>
+                    </label>
+                    <input type="submit" value="Зарегистрироваться" class="signInSubmit">
+                </div>
+            </form>
+            <hr class="line">
+            <a href="signin.html"><button class="signUp">Войти</button></a>
+        </div>
+        <div class="rules">
+            <div class="blockRules">
+                <ul class="rulesList">
+                    <li class="listItemError">
+                        <!-- <img src="img/rules_error.png" alt="error" class="rulesPoint"> -->
+                        <div class="rulesTextError" id="rule1">не менее 8 символов</div>
+                    </li>
+                    <li class="listItemError">
+                        <!-- <img src="img/rules_error.png" alt="error" class="rulesPoint" > -->
+                        <div class="rulesTextError" id="rule2">не менее 2х заглавных букв</div>
+                    </li>
+                    <li class="listItemError">
+                        <!-- <img src="img/rules_error.png" alt="error" class="rulesPoint" > -->
+                        <div class="rulesTextError" id="rule3">не менее 1 спец. символа (!, @, etc)</div>
+                    </li>
+                    <li class="listItemError">
+                        <!-- <img src="img/rules_error.png" alt="error" class="rulesPoint" > -->
+                        <div class="rulesTextError" id="rule4">не менее 1 цифры</div>
+                    </li>
+                    <li class="listItemRight">
+                        <!-- <img src="img/rules_right.png" alt="right" class="rulesPoint" > -->
+                        <div class="rulesTextRight" id="rule5">пробелы и символы переноса строки должны отсутствовать</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/validation_signup.js"></script>
+</body>
+</html>

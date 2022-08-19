@@ -1,0 +1,263 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #F9F9FB;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.signIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 160px;
+  width: 470px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signIn .signInTitle {
+  font-weight: 700;
+  font-size: 24px;
+  color: #373F41;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.signIn .signInInputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.signIn .signInInputs .signInInput {
+  width: 374px;
+  height: 49px;
+  padding-left: 16px;
+  border: 1px solid #EAEAEC;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+
+.signIn .signInInputs .signInInput::-webkit-input-placeholder {
+  color: #373F41;
+  opacity: 0.5;
+}
+
+.signIn .signInInputs .signInInput:-ms-input-placeholder {
+  color: #373F41;
+  opacity: 0.5;
+}
+
+.signIn .signInInputs .signInInput::-ms-input-placeholder {
+  color: #373F41;
+  opacity: 0.5;
+}
+
+.signIn .signInInputs .signInInput::placeholder {
+  color: #373F41;
+  opacity: 0.5;
+}
+
+.signIn .signInInputs .signInInput:hover {
+  border: 1px solid #CFCFCF;
+}
+
+.signIn .signInInputs .signInInput:focus {
+  border: 1px solid #277FFE;
+}
+
+.signIn .signInInputs div {
+  position: relative;
+}
+
+.signIn .signInInputs div .signInInputPassword {
+  width: 374px;
+  height: 49px;
+  padding-left: 16px;
+  border: 1px solid #EAEAEC;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+
+.signIn .signInInputs div .signInInputPassword::-webkit-input-placeholder {
+  color: #373F41;
+  opacity: 0.5;
+}
+
+.signIn .signInInputs div .signInInputPassword:-ms-input-placeholder {
+  color: #373F41;
+  opacity: 0.5;
+}
+
+.signIn .signInInputs div .signInInputPassword::-ms-input-placeholder {
+  color: #373F41;
+  opacity: 0.5;
+}
+
+.signIn .signInInputs div .signInInputPassword::placeholder {
+  color: #373F41;
+  opacity: 0.5;
+}
+
+.signIn .signInInputs div .signInInputPassword:hover {
+  border: 1px solid #CFCFCF;
+}
+
+.signIn .signInInputs div .signInInputPassword:focus {
+  border: 1px solid #277FFE;
+}
+
+.signIn .signInInputs div label {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+}
+
+.signIn .signInInputs div label:hover {
+  cursor: pointer;
+}
+
+.signIn .formButtons {
+  width: 395px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signIn .formButtons .signInSubmit {
+  padding: 16px 32px;
+  gap: 10px;
+  background: #277FFE;
+  border-radius: 8px;
+  border: 1px solid #277FFE;
+  font-size: 14px;
+  color: white;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.signIn .formButtons .signInSubmit:hover {
+  background: #005FE8;
+  border: 1px solid #005FE8;
+}
+
+.signIn .formButtons .signInSubmit:active {
+  opacity: 0.7;
+}
+
+.signIn .formButtons .forgotPassword {
+  text-decoration: none;
+  color: #277FFE;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.signIn .formButtons .forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.signIn .formButtons .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signIn .formButtons .check .checkButton {
+  margin-right: 8px;
+}
+
+.signIn .formButtons .check .checkTitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #373F41;
+}
+
+.signIn .line {
+  width: 390px;
+  height: 1px;
+  border: none;
+  background-color: #EAEAEC;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.signIn .signUp {
+  padding: 16px 32px;
+  border: 1px solid #277FFE;
+  border-radius: 8px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #277FFE;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 40px;
+}
+
+.signIn .signUp:hover {
+  border: 2px solid #277FFE;
+  padding-top: 15px;
+}
+
+.signIn .signUp:focus {
+  border: 2px solid #277FFE;
+  opacity: 0.7;
+  padding-top: 15px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
