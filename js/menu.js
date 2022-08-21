@@ -13,6 +13,8 @@ const blocks = document.querySelectorAll('.main_block');
 
 const taskForm = document.querySelectorAll('.newTask');
 
+let countPriority = 0;
+
 inboxButton.addEventListener('click', (e) =>{
     inboxButton.classList.add('listItemFocus');
     todayButton.classList.remove('listItemFocus');
@@ -30,6 +32,7 @@ inboxButton.addEventListener('click', (e) =>{
     taskForm.forEach((elem) => {
         elem.classList.add('hidden');
     });
+    countPriority = 0;
 });
 
 todayButton.addEventListener('click', (e) =>{
@@ -49,6 +52,7 @@ todayButton.addEventListener('click', (e) =>{
     taskForm.forEach((elem) => {
         elem.classList.add('hidden');
     });
+    countPriority = 0;
 });
 
 plansButton.addEventListener('click', (e) =>{
@@ -68,6 +72,7 @@ plansButton.addEventListener('click', (e) =>{
     taskForm.forEach((elem) => {
         elem.classList.add('hidden');
     });
+    countPriority = 0;
 });
 
 everButton.addEventListener('click', (e) =>{
@@ -87,4 +92,5 @@ everButton.addEventListener('click', (e) =>{
     taskForm.forEach((elem) => {
         elem.classList.add('hidden');
     });
+    countPriority = 0;
 });

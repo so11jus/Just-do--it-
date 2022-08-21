@@ -1,17 +1,21 @@
-const addButton = document.querySelectorAll('.addTaskButton'),
-      reseteButton = document.querySelectorAll('#reseteButton');
+const addButtons = document.querySelectorAll('.addTaskButton'),
+      resetButton = document.querySelectorAll('#reseteButton');
 
-console.log(addButton, taskForm);
-
-addButton.forEach(element => {
-    element.addEventListener('click', () => {
+addButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
         taskForm.forEach((elem) => {
             elem.classList.remove('hidden');
         });
+        const blockHeight = btn.closest('.main_block').scrollHeight;
+        if (blockHeight >= 700) {
+            btn.classList.add('addTaskButtonFixed');
+        } else {
+            btn.classList.remove('addTaskButtonFixed');
+        }
     });
 });
 
-reseteButton.forEach(element => {
+resetButton.forEach(element => {
     element.addEventListener('click', () => {
         taskForm.forEach((elem) => {
             elem.querySelector('form').reset();
@@ -21,3 +25,5 @@ reseteButton.forEach(element => {
         });
     });
 });
+
+

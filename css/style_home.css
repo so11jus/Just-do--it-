@@ -199,7 +199,7 @@ hr {
 }
 
 .content {
-  overflow: scroll;
+  overflow-y: scroll;
   height: calc(100vh - 63px);
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -511,6 +511,8 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 15px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .main .header .headerMenu .profile .profileLinks .profileData .profileDataTitle {
@@ -519,6 +521,14 @@ hr {
   font-size: 14px;
   line-height: 17px;
   color: #373F41;
+}
+
+.main .header .headerMenu .profile .profileLinks .profileData:hover {
+  opacity: 0.5;
+}
+
+.main .header .headerMenu .profile .profileLinks .profileData:active {
+  opacity: 0.3;
 }
 
 .main .header .headerMenu .profile .profileLinks .profileOptions {
@@ -530,6 +540,8 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 15px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .main .header .headerMenu .profile .profileLinks .profileOptions .profileOptionsTitle {
@@ -538,6 +550,14 @@ hr {
   font-size: 14px;
   line-height: 17px;
   color: #373F41;
+}
+
+.main .header .headerMenu .profile .profileLinks .profileOptions:hover {
+  opacity: 0.5;
+}
+
+.main .header .headerMenu .profile .profileLinks .profileOptions:active {
+  opacity: 0.3;
 }
 
 .main .header .headerMenu .profile .profileHr {
@@ -559,6 +579,8 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .main .header .headerMenu .profile .profileExit .profileExitTitle {
@@ -567,6 +589,14 @@ hr {
   line-height: 17px;
   color: #FF5555;
   margin-left: 9.12px;
+}
+
+.main .header .headerMenu .profile .profileExit:hover {
+  opacity: 0.5;
+}
+
+.main .header .headerMenu .profile .profileExit:active {
+  opacity: 0.3;
 }
 
 .main .header .headerMenu .show {
@@ -681,6 +711,8 @@ hr {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .main .main_block .main_block_header .header_sort .sortButtonWindow .sortPriority .sortPriorityTitle {
@@ -688,6 +720,14 @@ hr {
   font-size: 14px;
   line-height: 17px;
   margin-left: 9.83px;
+}
+
+.main .main_block .main_block_header .header_sort .sortButtonWindow .sortPriority:hover {
+  opacity: 0.5;
+}
+
+.main .main_block .main_block_header .header_sort .sortButtonWindow .sortPriority:active {
+  opacity: 0.3;
 }
 
 .main .main_block .main_block_header .header_sort .sortButtonWindow .sortDate {
@@ -698,6 +738,8 @@ hr {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .main .main_block .main_block_header .header_sort .sortButtonWindow .sortDate .sortDateTitle {
@@ -705,6 +747,14 @@ hr {
   font-size: 14px;
   line-height: 17px;
   margin-left: 9.83px;
+}
+
+.main .main_block .main_block_header .header_sort .sortButtonWindow .sortDate:hover {
+  opacity: 0.5;
+}
+
+.main .main_block .main_block_header .header_sort .sortButtonWindow .sortDate:active {
+  opacity: 0.3;
 }
 
 .main .main_block .newTask {
@@ -791,13 +841,9 @@ hr {
 }
 
 .main .main_block .newTask .newTaskButtons {
-  max-width: 420px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -859,7 +905,7 @@ hr {
   margin-left: 6.75px;
 }
 
-.main .main_block .newTask .newTaskButtons .priorityBlue {
+.main .main_block .newTask .newTaskButtons .priority {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -870,16 +916,37 @@ hr {
   opacity: 0.8;
 }
 
-.main .main_block .newTask .newTaskButtons .priorityBlue:hover {
+.main .main_block .newTask .newTaskButtons .priority:hover {
   opacity: 1;
 }
 
-.main .main_block .newTask .newTaskButtons .priorityBlue:active {
+.main .main_block .newTask .newTaskButtons .priority:active {
   opacity: 0.5;
 }
 
-.main .main_block .newTask .newTaskButtons .priorityBlue .priorityBlueTitle {
+.main .main_block .newTask .newTaskButtons .priority .priorityTitle {
   margin-left: 6.75px;
+}
+
+.main .main_block .newTask .newTaskButtons .priority .buttonPriorityImg {
+  width: 9.92px;
+  height: 11.67px;
+}
+
+.main .main_block .newTask .newTaskButtons .priorityBlue {
+  color: #277FFE;
+}
+
+.main .main_block .newTask .newTaskButtons .priorityYellow {
+  color: #F4A316;
+}
+
+.main .main_block .newTask .newTaskButtons .priorityRed {
+  color: #FF5555;
+}
+
+.main .main_block .newTask .newTaskButtons .priorityNone {
+  color: #277FFE;
 }
 
 .main .main_block .newTask .newTaskButtons .notificationBlue {
@@ -958,6 +1025,8 @@ hr {
   margin-right: 15px;
   margin-bottom: 5px;
   border: 1px solid white;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .main .main_block .newTask .newTaskButtons .notificationWindow .notificationForm .notificationCheckbox .checkbox {
@@ -974,7 +1043,7 @@ hr {
   margin-left: 20px;
   width: 19px;
   height: 19px;
-  background-image: url(../img/checkbock_before.png);
+  background-image: url(../img/checkbox_grey_uncheck.svg);
   position: relative;
 }
 
@@ -985,7 +1054,7 @@ hr {
   height: 19px;
   -webkit-transition: 200ms;
   transition: 200ms;
-  background-image: url(../img/checkbox_after.png);
+  background-image: url(../img/checkbox_blue_check.svg);
   opacity: 0;
 }
 
@@ -994,6 +1063,14 @@ hr {
   font-size: 14px;
   line-height: 17px;
   color: #373F41;
+}
+
+.main .main_block .newTask .newTaskButtons .notificationWindow .notificationForm .notificationCheckbox:hover .checkTitle {
+  opacity: 0.8;
+}
+
+.main .main_block .newTask .newTaskButtons .notificationWindow .notificationForm .notificationCheckbox:active .checkTitle {
+  opacity: 0.3;
 }
 
 .main .main_block .newTask .newTaskButtons .notificationWindow .notificationForm .notificationPlus {
@@ -1717,4 +1794,11 @@ hr {
 .show {
   opacity: 1 !important;
   visibility: visible !important;
+}
+
+.addTaskButtonFixed {
+  position: fixed !important;
+  bottom: 112px !important;
+  right: 95px !important;
+  z-index: 999;
 }

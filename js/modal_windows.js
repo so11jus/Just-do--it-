@@ -1,5 +1,5 @@
 const profileButton = document.querySelector('#profileOptions'),
-      notificationButton = document.querySelector('.notificationBlue'),
+      notificationButtons = document.querySelectorAll('.notificationBlue'),
       reminderButton = document.querySelector('#reminder'),
       sortButtons = document.querySelectorAll('.sort_button');
 
@@ -17,13 +17,17 @@ window.addEventListener('click', (e) => {
         profileWindow.classList.remove('show');
     }
     if (!e.target.closest('.notificationBlue') && !e.target.closest('.notificationWindow')) {
-        notificationWindow.classList.remove('show');
+        notificationButtons.forEach((notificationButton) => {
+            notificationButton.parentElement.querySelector('.notificationWindow').classList.remove('show');
+        });
     }
     if (!e.target.closest('#reminder') && !e.target.closest('.reminder')) {
         reminderWindow.classList.remove('show');
     }
     if (!e.target.closest('.sort_button') && !e.target.closest('.sortButtonWindow')) {
-        sortWindow.classList.remove('show');
+        sortButtons.forEach((sortButton) => {
+            sortButton.parentElement.querySelector('.sortButtonWindow').classList.remove('show');
+        });
     }
 });
 
@@ -31,8 +35,10 @@ profileButton.addEventListener('click', (e) => {
     profileWindow.classList.toggle('show');
 });
 
-notificationButton.addEventListener('click', (e) => {
-    notificationWindow.classList.toggle('show');
+notificationButtons.forEach((notificationButton) => {
+    notificationButton.addEventListener('click', (e) => {
+        notificationButton.parentElement.querySelector('.notificationWindow').classList.toggle('show');
+    });
 });
 
 reminderButton.addEventListener('click', (e) => {

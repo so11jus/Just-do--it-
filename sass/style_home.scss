@@ -150,7 +150,7 @@ hr {
 }
 
 .content{
-    overflow: scroll;
+    overflow-y: scroll;
     height: calc(100vh - 63px);
     box-sizing: content-box;
 }
@@ -364,6 +364,13 @@ hr {
                             line-height: 17px;
                             color: #373F41;
                         }
+                        transition: 200ms;
+                        &:hover{
+                            opacity: 0.5;
+                        }
+                        &:active{
+                            opacity: 0.3;
+                        }
                     }
                     .profileOptions{
                         display: flex;
@@ -376,6 +383,13 @@ hr {
                             font-size: 14px;
                             line-height: 17px;
                             color: #373F41;
+                        }
+                        transition: 200ms;
+                        &:hover{
+                            opacity: 0.5;
+                        }
+                        &:active{
+                            opacity: 0.3;
                         }
                     }
                 }
@@ -400,6 +414,13 @@ hr {
                         color: #FF5555;
                         margin-left: 9.12px;
                     }
+                    transition: 200ms;
+                        &:hover{
+                            opacity: 0.5;
+                        }
+                        &:active{
+                            opacity: 0.3;
+                        }
                 }
             }
             .show{
@@ -488,6 +509,13 @@ hr {
                             line-height: 17px;
                             margin-left: 9.83px;
                         }
+                        transition: 200ms;
+                        &:hover{
+                            opacity: 0.5;
+                        }
+                        &:active{
+                            opacity: 0.3;
+                        }
                     }
                     .sortDate{
                         margin-left: 22px;
@@ -498,6 +526,13 @@ hr {
                             font-size: 14px;
                             line-height: 17px;
                             margin-left: 9.83px;
+                        }
+                        transition: 200ms;
+                        &:hover{
+                            opacity: 0.5;
+                        }
+                        &:active{
+                            opacity: 0.3;
                         }
                     }
                 }
@@ -552,9 +587,7 @@ hr {
             }
 
             .newTaskButtons {
-                max-width: 420px;
                 display: flex;
-                justify-content: space-between;
                 font-weight: 400;
                 font-size: 12px;
                 line-height: 14px;
@@ -601,7 +634,7 @@ hr {
                     }
                 }
 
-                .priorityBlue {
+                .priority {
                     display: flex;
                     align-items: flex-end;
                     margin-left: 16.75px;
@@ -613,9 +646,29 @@ hr {
                     &:active {
                         opacity: 0.5;
                     }
-                    .priorityBlueTitle {
+                    .priorityTitle {
                         margin-left: 6.75px;
                     }
+                    .buttonPriorityImg{
+                        width: 9.92px;
+                        height: 11.67px;
+                    }
+                }
+
+                .priorityBlue{
+                    color: #277FFE;
+                }
+
+                .priorityYellow{
+                    color: #F4A316;
+                }
+
+                .priorityRed{
+                    color: #FF5555;
+                }
+
+                .priorityNone{
+                    color: #277FFE;
                 }
 
                 .notificationBlue {
@@ -683,7 +736,7 @@ hr {
                                 margin-left: 20px;
                                 width: 19px;
                                 height: 19px;
-                                background-image: url(../img/checkbock_before.png);
+                                background-image: url(../img/checkbox_grey_uncheck.svg);
                                 position: relative;
                                 &::before{
                                     content: "";
@@ -691,7 +744,7 @@ hr {
                                     width: 19px;
                                     height: 19px;
                                     transition: 200ms;
-                                    background-image: url(../img/checkbox_after.png);
+                                    background-image: url(../img/checkbox_blue_check.svg);
                                     opacity: 0;
                                 }
                             }
@@ -700,6 +753,17 @@ hr {
                                 font-size: 14px;
                                 line-height: 17px;
                                 color: #373F41;
+                            }
+                            transition: 200ms;
+                            &:hover{
+                                .checkTitle{
+                                    opacity: 0.8;
+                                }
+                            }
+                            &:active{
+                                .checkTitle{
+                                    opacity: 0.3;
+                                }
                             }
                         }
                         .notificationPlus{
@@ -1302,4 +1366,11 @@ hr {
 .show{
     opacity: 1 !important;
     visibility: visible !important;
+}
+
+.addTaskButtonFixed{
+    position: fixed !important;
+    bottom: 112px !important;
+    right: 95px !important;
+    z-index: 999;
 }
