@@ -11,6 +11,7 @@ const form = document.querySelector(".signInForm"),
       rule4 = document.querySelector('#rule4'),
       rule5 = document.querySelector('#rule5');
       
+console.log(email);
 
 passwordEye.addEventListener("click", (e)=>{
     if (password.type == 'text') {
@@ -40,13 +41,16 @@ function validate(email) {
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
+    let success = true;
     if (!validate(email)) {
         email.style.border="1px solid red";
+        success = false;
     } else {
         email.style.border="";
     }
     if (!checkbox.checked) {
         checkbox.parentElement.style.border="1px solid red";
+        success = false;
     } else {
         checkbox.parentElement.style.border="";
     }
@@ -56,13 +60,18 @@ form.addEventListener("submit", (e) => {
         (rule4.classList == "rulesTextError") || 
         (rule5.classList == "rulesTextError")) {
         password.style.border="1px solid red";
+        success = false;
     } else {
         password.style.border="";
     }
     if (password.value != passwordAgain.value) {
         passwordAgain.style.border="1px solid red";
-    }  else {
+        success = false;
+    } else {
         passwordAgain.style.border="";
+    }
+    if (success) {
+        form.submit();
     }
 }); 
 

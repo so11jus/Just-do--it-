@@ -1,7 +1,9 @@
 const form = document.querySelector(".signInForm"),
-      email = form.querySelector("input[name='email']"),
+      email = form.querySelector("input[name='username']"),
       password = form.querySelector("input[name='password']"),
       eye = form.querySelector('#eye');
+
+console.log(email);
 
 function validate(email) {
     let reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
@@ -23,7 +25,6 @@ form.addEventListener("submit", (e) => {
     }
     if (validate(email) && password.value == "aboba"){
         form.submit();
-        window.location.replace("home.html");
     } 
 }); 
 
