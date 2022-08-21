@@ -7,16 +7,16 @@ const { Op } = require("sequelize");
 
 router.get('/', async (req, res, next) => {
   if (!req.isAuthenticated()) {
-    res.redirect('/users/login')
+    res.redirect('/users/login');
   } else {
     let user
     if (req.user.id) {
-      user = await User.findOne({ where: {id: req.user.id} })
+      user = await User.findOne({ where: {id: req.user.id} });
     } else {
-      user = await User.findOne({ where: {email: req.user.username} })
+      user = await User.findOne({ where: {email: req.user.username} });
     }
-    tasks_number = await user.countTasks({where: {isActive: true}})
-    tasks_list = await user.getTasks({
+    let tasks_number = await user.countTasks({where: {isActive: true}});
+    let tasks_list = await user.getTasks({
       order: [
         ['isActive', 'DESC'],
         ['createdAt', 'DESC']
@@ -28,10 +28,10 @@ router.get('/', async (req, res, next) => {
       return date;
     }
   
-    today = new Date()
-    tomorrow = today.addDays(1)
-    yestarday = today.addDays(-1)
-    today_tasks_number = await user.countTasks({where: {createdAt: {[Op.between]: [yestarday, tomorrow]}}})
+    let today = new Date();
+    let tomorrow = today.addDays(1);
+    let yestarday = today.addDays(-1);
+    let today_tasks_number = await user.countTasks({where: {createdAt: {[Op.between]: [yestarday, tomorrow]}}});
     res.render('index', {
       tasks_list: tasks_list,
       tasks_number: tasks_number,
