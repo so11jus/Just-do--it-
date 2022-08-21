@@ -5,6 +5,7 @@ const User = require('../models/user')
 
 
 router.post('/create-task', async (req, res, next) => {
+    console.log(req.body)
     let user
     if (req.user.email) {
         user = await User.findOne({
