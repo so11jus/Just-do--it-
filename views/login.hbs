@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/fonts/lato.css">
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/style_login.css">
+    <title>Вход</title>
+</head>
+<body>
+    <div class="header">
+        <img src="/img/logo.png" alt="logo">
+    </div>
+    <div class="signIn">
+        <div class="signInTitle">Вход</div>
+        <form method="post" action="" class="signInForm">
+            <div class="signInInputs">
+                <input type="text" name="username" class="signInInput" placeholder="Электронная почта">
+                <div>
+                    <input type="password" name="password" id="password" class="signInInputPassword" placeholder="Пароль">
+                    <label for="password" id="eye"><img src="/img/password_eye.svg" alt="eye"></label>
+                </div>
+            </div>
+            <div class="formButtons">
+                <a href="#" class="forgotPassword">Забыли пароль?</a>
+                <input type="submit" value="Войти в кабинет" class="signInSubmit">
+            </div>
+        </form>
+        <hr class="line">
+        <a href="/users/signup"><button class="signUp">Регистрация</button></a>
+    </div>
+    {{!-- <script src="/javascripts/validation_signin.js"></script> --}}
+</body>
+</html>
